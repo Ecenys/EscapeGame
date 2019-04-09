@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.prueba1.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Program Files\\Unity Projects\\VR-Unity\\Videogame\\actions.json",
+      "action_manifest_path": "C:\\Program Files\\Unity Projects\\VR-Prueba\\Videogame\\actions.json",
       "strings": {
         "en_us": {
           "name": "Prueba1 [Testing]"

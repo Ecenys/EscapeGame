@@ -17,6 +17,8 @@ public class Puzzle : MonoBehaviour
     public GameObject puertabloqueada2;
     public GameObject puertabloqueada3;
     private Vector3 vector;
+    private bool condicion1 = false;
+    private bool condicion2 = false;
 
     // Start is called before the first frame update
     void Start()
@@ -47,15 +49,20 @@ public class Puzzle : MonoBehaviour
         /*Cuatro*/
         if ((puerta1.transform.rotation.eulerAngles.y <= 225) && (puerta3.transform.rotation.eulerAngles.y <= 225) && (puerta7.transform.rotation.eulerAngles.y <= 225) && (puerta9.transform.rotation.eulerAngles.y <= 225) && (puerta2.transform.rotation.eulerAngles.y >= 269) && (puerta4.transform.rotation.eulerAngles.y >= 269) && (puerta5.transform.rotation.eulerAngles.y >= 269) && (puerta6.transform.rotation.eulerAngles.y >= 269) && (puerta8.transform.rotation.eulerAngles.y >= 269))
         {
-            puertabloqueada1.GetComponent<BoxCollider>().enabled = true;
+            condicion1 = true;
         }
         /*Cinco*/
         if ((puerta1.transform.rotation.eulerAngles.y <= 225) && (puerta3.transform.rotation.eulerAngles.y <= 225) && (puerta5.transform.rotation.eulerAngles.y <= 225) && (puerta7.transform.rotation.eulerAngles.y <= 225) && (puerta9.transform.rotation.eulerAngles.y <= 225) && (puerta2.transform.rotation.eulerAngles.y >= 269) && (puerta4.transform.rotation.eulerAngles.y >= 269) && (puerta6.transform.rotation.eulerAngles.y >= 269) && (puerta8.transform.rotation.eulerAngles.y >= 269))
         {
-            puertabloqueada2.GetComponent<BoxCollider>().enabled = true;
+            
         }
         /*Seis*/
         if ((puerta1.transform.rotation.eulerAngles.y <= 225) && (puerta3.transform.rotation.eulerAngles.y <= 225) && (puerta4.transform.rotation.eulerAngles.y <= 225) && (puerta6.transform.rotation.eulerAngles.y <= 225) && (puerta7.transform.rotation.eulerAngles.y <= 225) && (puerta9.transform.rotation.eulerAngles.y <= 225) && (puerta2.transform.rotation.eulerAngles.y >= 269) && (puerta5.transform.rotation.eulerAngles.y >= 269) && (puerta8.transform.rotation.eulerAngles.y >= 269))
+        {
+            condicion2 = true;
+        }
+
+        if((condicion1 == true) && (condicion2 == true))
         {
             puertabloqueada3.GetComponent<BoxCollider>().enabled = true;
         }

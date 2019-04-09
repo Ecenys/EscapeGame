@@ -25,16 +25,10 @@ public class cube : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.name == "glass_jar")
+        if(col.gameObject.name == "Domino64")
         {
-            Debug.Log("Puerta 1 ángulos:" + puerta1.transform.rotation.eulerAngles.y);
-            Debug.Log("Puerta 7 ángulos:" + puerta7.transform.rotation.eulerAngles.y);
-            if ((puerta1.transform.rotation.eulerAngles.y <= 190) && (puerta7.transform.rotation.eulerAngles.y <= 190))
-            {
-                Destroy(puerta);
-            }
-            puertasalida.GetComponent<Event>().tocado = true;
-			Destroy(bloqueo);
+            puertasalida.GetComponent<BoxCollider>().enabled = true;
+			
             //Destroy(puerta);
             //puerta.GetComponent("Interactable").enabled = true;
         }
