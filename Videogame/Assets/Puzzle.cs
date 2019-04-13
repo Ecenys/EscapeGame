@@ -74,7 +74,7 @@ public class Puzzle : MonoBehaviour
             if (var == 1)
             {
                 float vol = Random.Range(volumenbajo, volumenalto);
-                source.PlayOneShot(sonidito, vol);
+                source.PlayOneShot(sonidito, 0.2f);
                 var = 0;
             }
         }

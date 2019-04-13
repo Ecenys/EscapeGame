@@ -4923,7 +4923,7 @@ MonoBehaviour:
   snapAttachEaseInTime: 0.15
   snapAttachEaseInCompleted: 0
   skeletonPoser: {fileID: 0}
-  handFollowTransform: 1
+  handFollowTransform: 0
   highlightOnHover: 1
   hideHighlight: []
 --- !u!65 &395722063
@@ -4977,7 +4977,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 0d7ab9b1ac9afde4b8a2afcabaae6a9d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.58
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
