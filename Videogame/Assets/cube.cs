@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class cube : MonoBehaviour
 {
-    public GameObject puerta1;
+  
     public GameObject colision;
-    public GameObject puerta7;
-    public GameObject puerta;
     public GameObject puertasalida;
-	public GameObject bloqueo;
+    public GameObject rojo;
+    public GameObject verde;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +27,8 @@ public class cube : MonoBehaviour
         if(col.gameObject.name == "Domino64")
         {
             puertasalida.GetComponent<BoxCollider>().enabled = true;
-			
+            rojo.SetActive(false);
+            verde.SetActive(true);
             //Destroy(puerta);
             //puerta.GetComponent("Interactable").enabled = true;
         }
