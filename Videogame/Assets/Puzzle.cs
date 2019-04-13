@@ -17,6 +17,7 @@ public class Puzzle : MonoBehaviour
     public GameObject puertabloqueada2;
     public GameObject puertabloqueada3;
     public AudioClip sonidito;
+    private int var = 1;
     private AudioSource source;
     private float volumenbajo = .5f;
     private float volumenalto = 1.0f;
@@ -70,8 +71,12 @@ public class Puzzle : MonoBehaviour
         if((condicion1 == true) && (condicion2 == true))
         {
             puertabloqueada3.GetComponent<BoxCollider>().enabled = true;
-            float vol = Random.Range(volumenbajo, volumenalto);
-            source.PlayOneShot(sonidito, vol);
+            if (var == 1)
+            {
+                float vol = Random.Range(volumenbajo, volumenalto);
+                source.PlayOneShot(sonidito, vol);
+                var = 0;
+            }
         }
     }
 

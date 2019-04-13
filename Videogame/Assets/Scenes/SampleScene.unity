@@ -4963,7 +4963,7 @@ MonoBehaviour:
   puertabloqueada1: {fileID: 1333326293}
   puertabloqueada2: {fileID: 227091957}
   puertabloqueada3: {fileID: 278007108}
-  sonidito: {fileID: 8300000, guid: 5debc7422c21c71429a0b6ffd05942af, type: 3}
+  sonidito: {fileID: 8300000, guid: 0d7ab9b1ac9afde4b8a2afcabaae6a9d, type: 3}
 --- !u!82 &395722065
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4975,7 +4975,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243366450046692526, guid: ec12f7772c03e4c4c9e4c2f1643595ad,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 5debc7422c21c71429a0b6ffd05942af, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0d7ab9b1ac9afde4b8a2afcabaae6a9d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.58
   m_Pitch: 1
