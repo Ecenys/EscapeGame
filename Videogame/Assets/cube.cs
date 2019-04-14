@@ -13,7 +13,9 @@ public class cube : MonoBehaviour
     public AudioClip alarmarara;
     public AudioClip error;
     public AudioClip acierto;
+    public GameObject colPuerta;
     private int var = 1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,7 @@ public class cube : MonoBehaviour
             puertasalida.GetComponent<BoxCollider>().enabled = true;
             rojo.SetActive(false);
             verde.SetActive(true);
+            colPuerta.SetActive(false);
             if (var == 1)
             {
                 source.PlayOneShot(alarmarara, 0.5f);
