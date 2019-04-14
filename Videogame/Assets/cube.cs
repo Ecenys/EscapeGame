@@ -11,6 +11,8 @@ public class cube : MonoBehaviour
     public GameObject verde;
     public AudioSource source;
     public AudioClip alarmarara;
+    public AudioClip error;
+    public AudioClip acierto;
     private int var = 1;
 
     // Start is called before the first frame update
@@ -35,10 +37,15 @@ public class cube : MonoBehaviour
             if (var == 1)
             {
                 source.PlayOneShot(alarmarara, 0.5f);
+                source.PlayOneShot(acierto, 0.5f);
                 var = 0;
             }
             //Destroy(puerta);
             //puerta.GetComponent("Interactable").enabled = true;
+        }
+        else
+        {
+            source.PlayOneShot(error, 0.5f);
         }
     }
 
