@@ -6719,10 +6719,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 110394, guid: e8844f0074e08e146ac42fb5eaeab3db, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2314588, guid: e8844f0074e08e146ac42fb5eaeab3db, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6731,6 +6727,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 93ea624518e3ef24f8ee73c672e6d18d, type: 2}
+    - target: {fileID: 110394, guid: e8844f0074e08e146ac42fb5eaeab3db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8844f0074e08e146ac42fb5eaeab3db, type: 3}
 --- !u!4 &514729734 stripped
@@ -9531,6 +9531,8 @@ MonoBehaviour:
   verde: {fileID: 1682695867}
   source: {fileID: 0}
   alarmarara: {fileID: 8300000, guid: b3a576e15c65cc746a05f18fff9c5031, type: 3}
+  error: {fileID: 8300000, guid: 543b9466df795164898572af9324f037, type: 3}
+  acierto: {fileID: 8300000, guid: b8897cb9de250154a83444e63f8ad7b4, type: 3}
 --- !u!65 &715964267
 BoxCollider:
   m_ObjectHideFlags: 0
