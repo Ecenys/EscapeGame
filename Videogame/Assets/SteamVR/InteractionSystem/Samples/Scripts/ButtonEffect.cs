@@ -9,16 +9,23 @@ namespace Valve.VR.InteractionSystem.Sample
 {
     public class ButtonEffect : MonoBehaviour
     {
+		public String number;
+		public GameObject marco;
+		
         public void OnButtonDown(Hand fromHand)
         {
+			String text = marco.GetComponent<TextMesh>().text;
+			text += number;
+			marco.GetComponent<TextMesh>().text = text;
             ColorSelf(Color.cyan);
-            fromHand.TriggerHapticPulse(1000);
-        }
+            //fromHand.TriggerHapticPulse(1000);
+		}
 
         public void OnButtonUp(Hand fromHand)
         {
             ColorSelf(Color.white);
         }
+		
 
         private void ColorSelf(Color newColor)
         {
