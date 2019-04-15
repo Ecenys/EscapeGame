@@ -40,16 +40,22 @@ public class Puzzle : MonoBehaviour
         /*Uno*/
         if ((puerta1.transform.rotation.eulerAngles.y >= 269) && (puerta5.transform.rotation.eulerAngles.y <= 225) && (puerta9.transform.rotation.eulerAngles.y >= 269) && (puerta2.transform.rotation.eulerAngles.y >= 269) && (puerta3.transform.rotation.eulerAngles.y >= 269) && (puerta4.transform.rotation.eulerAngles.y >= 269) && (puerta6.transform.rotation.eulerAngles.y >= 269) && (puerta7.transform.rotation.eulerAngles.y >= 269) && (puerta8.transform.rotation.eulerAngles.y >= 269))
         {
+            condicion1 = false;
+            condicion2 = false;
             //Destroy(puertabloqueada1);
         }
         /*Dos*/
         if ((puerta1.transform.rotation.eulerAngles.y <= 225) && (puerta5.transform.rotation.eulerAngles.y >= 269) && (puerta9.transform.rotation.eulerAngles.y <= 225) && (puerta2.transform.rotation.eulerAngles.y >= 269) && (puerta3.transform.rotation.eulerAngles.y >= 269) && (puerta4.transform.rotation.eulerAngles.y >= 269) && (puerta6.transform.rotation.eulerAngles.y >= 269) && (puerta7.transform.rotation.eulerAngles.y >= 269) && (puerta8.transform.rotation.eulerAngles.y >= 269))
         {
+            condicion1 = false;
+            condicion2 = false;
             //Destroy(puertabloqueada1);
         }
         /*Tres*/
         if ((puerta1.transform.rotation.eulerAngles.y <= 225) && (puerta5.transform.rotation.eulerAngles.y <= 225) && (puerta9.transform.rotation.eulerAngles.y <= 225) && (puerta2.transform.rotation.eulerAngles.y >= 269) && (puerta3.transform.rotation.eulerAngles.y >= 269) && (puerta4.transform.rotation.eulerAngles.y >= 269) && (puerta6.transform.rotation.eulerAngles.y >= 269) && (puerta7.transform.rotation.eulerAngles.y >= 269) && (puerta8.transform.rotation.eulerAngles.y >= 269))
         {
+            condicion1 = false;
+            condicion2 = false;
             //Destroy(puertabloqueada1);
         }
         /*Cuatro*/
@@ -60,7 +66,8 @@ public class Puzzle : MonoBehaviour
         /*Cinco*/
         if ((puerta1.transform.rotation.eulerAngles.y <= 225) && (puerta3.transform.rotation.eulerAngles.y <= 225) && (puerta5.transform.rotation.eulerAngles.y <= 225) && (puerta7.transform.rotation.eulerAngles.y <= 225) && (puerta9.transform.rotation.eulerAngles.y <= 225) && (puerta2.transform.rotation.eulerAngles.y >= 269) && (puerta4.transform.rotation.eulerAngles.y >= 269) && (puerta6.transform.rotation.eulerAngles.y >= 269) && (puerta8.transform.rotation.eulerAngles.y >= 269))
         {
-            
+            condicion1 = false;
+            condicion2 = false;
         }
         /*Seis*/
         if ((puerta1.transform.rotation.eulerAngles.y <= 225) && (puerta3.transform.rotation.eulerAngles.y <= 225) && (puerta4.transform.rotation.eulerAngles.y <= 225) && (puerta6.transform.rotation.eulerAngles.y <= 225) && (puerta7.transform.rotation.eulerAngles.y <= 225) && (puerta9.transform.rotation.eulerAngles.y <= 225) && (puerta2.transform.rotation.eulerAngles.y >= 269) && (puerta5.transform.rotation.eulerAngles.y >= 269) && (puerta8.transform.rotation.eulerAngles.y >= 269))
