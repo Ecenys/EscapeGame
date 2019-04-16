@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: 574ad43204a6da0409a0f2fbb6e38531
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 20368_Digital_Safe_Anisotropic
+    100002: 20368_Digital_Safe_Metal_01
+    100004: 20368_Digital_Safe_Metal_02
+    100006: 20368_Digital_Safe_Nurmb
+    100008: 20368_Digital_Safe_Plastic_01
+    100010: 20368_Digital_Safe_Plastic_02
+    100012: //RootNode
+    400000: 20368_Digital_Safe_Anisotropic
+    400002: 20368_Digital_Safe_Metal_01
+    400004: 20368_Digital_Safe_Metal_02
+    400006: 20368_Digital_Safe_Nurmb
+    400008: 20368_Digital_Safe_Plastic_01
+    400010: 20368_Digital_Safe_Plastic_02
+    400012: //RootNode
+    2100000: 20368_Digital_Safe_AnisotropicMat
+    2100002: 20368_Digital_Safe_Metal_01Mat
+    2100004: 20368_Digital_Safe_Metal_02Mat
+    2100006: 20368_Digital_Safe_NurmbMat
+    2100008: 20368_Digital_Safe_Plastic_01Mat
+    2100010: 20368_Digital_Safe_Plastic_02Mat
+    2300000: 20368_Digital_Safe_Anisotropic
+    2300002: 20368_Digital_Safe_Metal_01
+    2300004: 20368_Digital_Safe_Metal_02
+    2300006: 20368_Digital_Safe_Nurmb
+    2300008: 20368_Digital_Safe_Plastic_01
+    2300010: 20368_Digital_Safe_Plastic_02
+    3300000: 20368_Digital_Safe_Anisotropic
+    3300002: 20368_Digital_Safe_Metal_01
+    3300004: 20368_Digital_Safe_Metal_02
+    3300006: 20368_Digital_Safe_Nurmb
+    3300008: 20368_Digital_Safe_Plastic_01
+    3300010: 20368_Digital_Safe_Plastic_02
+    4300000: 20368_Digital_Safe_Anisotropic
+    4300002: 20368_Digital_Safe_Metal_01
+    4300004: 20368_Digital_Safe_Metal_02
+    4300006: 20368_Digital_Safe_Nurmb
+    4300008: 20368_Digital_Safe_Plastic_01
+    4300010: 20368_Digital_Safe_Plastic_02
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
