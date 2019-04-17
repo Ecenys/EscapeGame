@@ -115,6 +115,7 @@ ModelImporter:
     400108: VRayPlane02
     2000000: Camera01
     2100000: 'Material #154'
+    2100002: 'Material #185'
     2300000: arch20_030_00
     2300002: arch20_030_01
     2300004: arch20_030_02
