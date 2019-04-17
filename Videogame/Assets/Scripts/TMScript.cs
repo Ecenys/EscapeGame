@@ -19,13 +19,15 @@ public class TMScript : MonoBehaviour
     {
 		if (activate.transform.position.y < -1.0f){
 			if (puzzle){
-				if (GetComponent<TextMesh>().text.Length == 4 && GetComponent<TextMesh>().text != "" && GetComponent<TextMesh>().text != "1234"){
+				if (GetComponent<TextMesh>().text.Length == 4 && GetComponent<TextMesh>().text != "" && GetComponent<TextMesh>().text != "1826"){
+					if(GetComponent<TextMesh>().text.Length == 4 && GetComponent<TextMesh>().text == "4129")
+						Debug.Log("Que listillo tu, ¿No?");
 					Debug.Log("Fallo");
 					GetComponent<TextMesh>().text="Error";
 					//sleep a second
 					GetComponent<TextMesh>().text="";
 				}
-				else if(GetComponent<TextMesh>().text.Length == 4 && GetComponent<TextMesh>().text == "1234"){
+				else if(GetComponent<TextMesh>().text.Length == 4 && GetComponent<TextMesh>().text == "1826"){
 					Debug.Log("Acierto");
 					GetComponent<TextMesh>().text="Open";
 					puzzle = false;
