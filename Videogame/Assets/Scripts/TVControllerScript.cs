@@ -22,10 +22,15 @@ public class TVControllerScript : MonoBehaviour
 	}
 	
 	public void vlmas(){
-		Debug.Log("Mas Volumen");
+		if (television.volume == 1)
+			television.volume = 1;
+		else
+			television.volume += 0.2f;
 	}
-	
 	public void vlmenos(){
-		Debug.Log("Menos Volumen");
+		if (television.volume == 0)
+			television.volume = 0;
+		else
+			television.volume -= 0.2f;
 	}
 }

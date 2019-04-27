@@ -1,15 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class TMScript : MonoBehaviour
 {
 	public GameObject activate;
+	public Interactable door;
 	
 	private bool puzzle;
     // Start is called before the first frame update
     void Start()
     {
+		door.enabled = false;
+		door.enabled = false;
         GetComponent<TextMesh>().text="";
 		puzzle = true;
     }
@@ -31,6 +35,7 @@ public class TMScript : MonoBehaviour
 					Debug.Log("Acierto");
 					GetComponent<TextMesh>().text="Open";
 					puzzle = false;
+					door.enabled = true;
 				}
 			}
 			else

@@ -14,7 +14,6 @@ public class lock1 : MonoBehaviour
     void Start()
     {
         
-        
     }
 
     void OnCollisionEnter(Collision col)
@@ -23,6 +22,7 @@ public class lock1 : MonoBehaviour
         if (col.gameObject.tag == "keyG")
         {
             box.GetComponent<BoxCollider>().enabled = true;
+			GetComponent<Rigidbody>().useGravity =  true;
             a = 2;
         }
 
