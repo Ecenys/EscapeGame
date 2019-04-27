@@ -10,7 +10,7 @@ public class TVScript : MonoBehaviour
 	public GameObject channel2;
 	public GameObject channel3;
 	
-	private int channel;
+	public int channel;
 	
     // Start is called before the first frame update
     void Start()
