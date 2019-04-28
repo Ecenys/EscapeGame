@@ -21,7 +21,6 @@ public class TVScript : MonoBehaviour
     void Start()
     {
 		channel = 1;
-		volume = 1;
 		channel1.GetComponent<Renderer>().enabled = false;
 		channel2.GetComponent<Renderer>().enabled = false;
 		channel3.GetComponent<Renderer>().enabled = false;
