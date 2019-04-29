@@ -15,7 +15,7 @@ public class TVScript : MonoBehaviour
 	public VideoPlayer videoplayer2;
 	
 	public int channel = 1;
-	public float volume = 1;
+	public float volume = 0.4;
 	
     // Start is called before the first frame update
     void Start()

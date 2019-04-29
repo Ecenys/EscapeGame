@@ -7,8 +7,10 @@ public class TMScript : MonoBehaviour
 {
 	public GameObject activate;
 	public Interactable door;
+    public Transform player;
 	
 	private bool puzzle;
+    private Vector3 position;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +18,16 @@ public class TMScript : MonoBehaviour
 		door.enabled = false;
         GetComponent<TextMesh>().text="";
 		puzzle = true;
+        position = trasform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (player.position.z <= 14)
+            transform.position = new Vector3(200, 200, 200);
+        else
+            transform.position = position;
 		if (activate.transform.position.y < -1.0f){
 			if (puzzle){
 				if (GetComponent<TextMesh>().text.Length == 4 && GetComponent<TextMesh>().text != "" && GetComponent<TextMesh>().text != "1826"){
