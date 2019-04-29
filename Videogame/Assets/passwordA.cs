@@ -63,6 +63,7 @@ public class passwordA : MonoBehaviour
 
     public void num_three()
     {
+        num_3 = 3;
         digit_1 = false;
         digit_2 = false;
         digit_3 = false;
