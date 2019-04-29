@@ -8,6 +8,7 @@ public class TMScript : MonoBehaviour
 	public GameObject activate;
 	public Interactable door;
     public Transform player;
+    
 	
 	private bool puzzle;
     private Vector3 position;
@@ -18,7 +19,7 @@ public class TMScript : MonoBehaviour
 		door.enabled = false;
         GetComponent<TextMesh>().text="";
 		puzzle = true;
-        position = trasform.position;
+        //position = Transform.position;
     }
 
     // Update is called once per frame

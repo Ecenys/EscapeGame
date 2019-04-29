@@ -193,6 +193,7 @@ public class PasswordB : MonoBehaviour
     {
         //Aparece la llave de la derecha
         //box.GetComponent<BoxCollider>().enabled = true;
+        box.SetActive(true);
         a = 2;
 
     }
