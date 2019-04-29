@@ -9,7 +9,7 @@ public class Light2script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Light>().enabled = true;
+        GetComponent<Light>().enabled = false;
     }
 
     // Update is called once per frame
