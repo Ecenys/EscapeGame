@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class passwordA : MonoBehaviour
 {
+    public AudioClip op;
+    public AudioSource source;
+
     public GameObject box;
     private int num_1 = 0;
     private int num_2 = 0;
@@ -30,13 +33,13 @@ public class passwordA : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (digit_1 && digit_2 && digit_4 && digit_3) { OpenA(); }
+        if (digit_1 && digit_2 && digit_4 && digit_3) { source.PlayOneShot(op, 0.5f); OpenA(); }
     }
 
 

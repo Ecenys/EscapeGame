@@ -6,21 +6,22 @@ public class lock3 : MonoBehaviour
 {
     public GameObject box;
     public GameObject colision;
-
-
+    public AudioSource source;
+    public AudioClip op;
     public int a = 0;
     // Start is called before the first frame update
     void Start()
     {
-        
+        source = GetComponent<AudioSource>();
     }
     void OnCollisionEnter(Collision col)
     {
         a = 3;
         if (col.gameObject.tag == "KeyCloset")
         {
+            source.PlayOneShot(op, 0.5f);
             box.GetComponent<BoxCollider>().enabled = true;
-
+            
             a = 2;
         }
 
