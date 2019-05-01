@@ -35,7 +35,7 @@ public class TVScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		float dist = Vector3.Distance(transform.position, player.transform.position)
+		float dist = Vector3.Distance(transform.position, player.transform.position);
 		float volumencontinuo;
 		if  (dist <= maxDistanceAudio)
 			volumencontinuo = volume / maxDistanceAudio;
