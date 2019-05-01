@@ -29,7 +29,7 @@ public class SafeBoxScript : MonoBehaviour
 		// Debug.Log(key5.GetComponent<LinearMapping>().value);
 		// Debug.Log(key6.GetComponent<LinearMapping>().value);
 
-        if (0.7f<key1.GetComponent<LinearMapping>().value || key1.GetComponent<LinearMapping>().value<0.8 || 0.6<key2.GetComponent<LinearMapping>().value || key2.GetComponent<LinearMapping>().value<0.7 || 0.9<key3.GetComponent<LinearMapping>().value || key3.GetComponent<LinearMapping>().value<1 || 0.2<key4.GetComponent<LinearMapping>().value || key4.GetComponent<LinearMapping>().value<0.3 || 0.8<key5.GetComponent<LinearMapping>().value || key5.GetComponent<LinearMapping>().value<0.9 || 0.7<key6.GetComponent<LinearMapping>().value || key6.GetComponent<LinearMapping>().value<0.8){
+        if (0.7f<key1.GetComponent<LinearMapping>().value && key1.GetComponent<LinearMapping>().value<0.8 && 0.6<key2.GetComponent<LinearMapping>().value && key2.GetComponent<LinearMapping>().value<0.7 && 0.9<key3.GetComponent<LinearMapping>().value && key3.GetComponent<LinearMapping>().value<1 && 0.2<key4.GetComponent<LinearMapping>().value && key4.GetComponent<LinearMapping>().value<0.3 && 0.8<key5.GetComponent<LinearMapping>().value && key5.GetComponent<LinearMapping>().value<0.9 && 0.7<key6.GetComponent<LinearMapping>().value && key6.GetComponent<LinearMapping>().value<0.8){
 			GetComponent<Interactable>().enabled = true;
 			GetComponent<Throwable>().enabled = true;
             Debug.Log("Esta bien");

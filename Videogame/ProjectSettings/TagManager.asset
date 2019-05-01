@@ -9,6 +9,7 @@ TagManager:
   - keyTramp
   - pang
   - keyBlade
+  - ink
   layers:
   - Default
   - TransparentFX
