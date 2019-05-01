@@ -6,7 +6,7 @@ using Valve.VR.InteractionSystem;
 public class TMScript : MonoBehaviour
 {
 	public GameObject activate;
-	public Interactable door;
+	public GameObject door;
     public Transform player;
     
 	
@@ -15,8 +15,7 @@ public class TMScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		door.enabled = false;
-		door.enabled = false;
+		door.GetComponent<BoxCollider>().enabled = false;
         GetComponent<TextMesh>().text="";
 		puzzle = true;
         //position = Transform.position;
@@ -32,8 +31,8 @@ public class TMScript : MonoBehaviour
 		if (activate.transform.position.y < -1.0f){
 			if (puzzle){
 				if (GetComponent<TextMesh>().text.Length == 4 && GetComponent<TextMesh>().text != "" && GetComponent<TextMesh>().text != "1826"){
-					if(GetComponent<TextMesh>().text.Length == 4 && GetComponent<TextMesh>().text == "4129")
-						Debug.Log("Que listillo tu, ¿No?");
+					if(GetComponent<TextMesh>().text.Length == 4 && GetComponent<TextMesh>().text == "8314")
+						Debug.Log("Que listillo tu, ¿No serás informático?");
 					Debug.Log("Fallo");
 					GetComponent<TextMesh>().text="Error";
 					//sleep a second
@@ -43,7 +42,7 @@ public class TMScript : MonoBehaviour
 					Debug.Log("Acierto");
 					GetComponent<TextMesh>().text="Open";
 					puzzle = false;
-					door.enabled = true;
+					door.GetComponent<BoxCollider>().enabled = true;
 				}
 			}
 			else

@@ -22,7 +22,7 @@ public class VentiladorScript : MonoBehaviour
     {
         if(activador.transform.position.y < -1.0f || enable){
 			transform.Rotate(Vector3.up * Time.deltaTime * velocidad, Space.World);
-			if (!sound){
+			if (!sound){ //evita que se reinicie cada frame
 				GetComponent<AudioSource>().Play();
 				sound = true;
 			}

@@ -14,6 +14,10 @@ public class TVScript : MonoBehaviour
 	public VideoPlayer videoplayer1;
 	public VideoPlayer videoplayer2;
 	
+	public float maxDistanceAudio;
+	
+	public GameObject player;
+	
 	public int channel = 1;
 	public float volume = 0.4f;
 	
@@ -30,9 +34,15 @@ public class TVScript : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {	
-		videoplayer1.SetDirectAudioVolume(0, volume);
-		videoplayer2.SetDirectAudioVolume(0, volume);
+    {
+		float dist = Vector3.Distance(transform.position, player.transform.position)
+		float volumencontinuo;
+		if  (dist <= maxDistanceAudio)
+			volumencontinuo = volume / maxDistanceAudio;
+		else
+			volumencontinuo=0;
+		videoplayer1.SetDirectAudioVolume(0, volumencontinuo);
+		videoplayer2.SetDirectAudioVolume(0, volumencontinuo);
 		
         if(activator.transform.position.y < -1.0f){
 			switch (channel)
