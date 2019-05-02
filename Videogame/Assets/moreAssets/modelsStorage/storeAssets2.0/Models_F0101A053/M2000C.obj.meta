@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: 19b002c3e82c61e44a444fa4fd43e1df
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: aileron_l
+    100002: aileron_r
+    100004: cage
+    100006: cageglass
+    100008: flap_l
+    100010: flap_r
+    100012: frontglass
+    100014: fuselage_NO_BONE
+    100016: //RootNode
+    100018: missile_magic_1
+    100020: missile_magic_2
+    100022: missile_magic_3
+    100024: missile_magic_4
+    100026: missile_super_l
+    100028: missile_super_r
+    100030: rudder
+    100032: tank
+    100034: wheelin
+    100036: wheelout
+    400000: aileron_l
+    400002: aileron_r
+    400004: cage
+    400006: cageglass
+    400008: flap_l
+    400010: flap_r
+    400012: frontglass
+    400014: fuselage_NO_BONE
+    400016: //RootNode
+    400018: missile_magic_1
+    400020: missile_magic_2
+    400022: missile_magic_3
+    400024: missile_magic_4
+    400026: missile_super_l
+    400028: missile_super_r
+    400030: rudder
+    400032: tank
+    400034: wheelin
+    400036: wheelout
+    2100000: aileron_lMat
+    2100002: aileron_rMat
+    2100004: cageMat
+    2100006: cageglassMat
+    2100008: flap_lMat
+    2100010: flap_rMat
+    2100012: frontglassMat
+    2100014: fuselage_NO_BONEMat
+    2100016: missile_magic_1Mat
+    2100018: missile_magic_2Mat
+    2100020: missile_magic_3Mat
+    2100022: missile_magic_4Mat
+    2100024: missile_super_lMat
+    2100026: missile_super_rMat
+    2100028: rudderMat
+    2100030: tankMat
+    2100032: wheelinMat
+    2100034: wheeloutMat
+    2300000: aileron_l
+    2300002: aileron_r
+    2300004: cage
+    2300006: cageglass
+    2300008: flap_l
+    2300010: flap_r
+    2300012: frontglass
+    2300014: fuselage_NO_BONE
+    2300016: missile_magic_1
+    2300018: missile_magic_2
+    2300020: missile_magic_3
+    2300022: missile_magic_4
+    2300024: missile_super_l
+    2300026: missile_super_r
+    2300028: rudder
+    2300030: tank
+    2300032: wheelin
+    2300034: wheelout
+    3300000: aileron_l
+    3300002: aileron_r
+    3300004: cage
+    3300006: cageglass
+    3300008: flap_l
+    3300010: flap_r
+    3300012: frontglass
+    3300014: fuselage_NO_BONE
+    3300016: missile_magic_1
+    3300018: missile_magic_2
+    3300020: missile_magic_3
+    3300022: missile_magic_4
+    3300024: missile_super_l
+    3300026: missile_super_r
+    3300028: rudder
+    3300030: tank
+    3300032: wheelin
+    3300034: wheelout
+    4300000: aileron_l
+    4300002: aileron_r
+    4300004: cage
+    4300006: cageglass
+    4300008: flap_l
+    4300010: flap_r
+    4300012: frontglass
+    4300014: fuselage_NO_BONE
+    4300016: missile_magic_1
+    4300018: missile_magic_2
+    4300020: missile_magic_3
+    4300022: missile_magic_4
+    4300024: missile_super_l
+    4300026: missile_super_r
+    4300028: rudder
+    4300030: tank
+    4300032: wheelin
+    4300034: wheelout
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

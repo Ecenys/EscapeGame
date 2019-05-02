@@ -1,0 +1,240 @@
+fileFormatVersion: 2
+guid: 052bd41dcccf1254595da76ab21a1741
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arms/Leg Line
+    100002: Axle 01
+    100004: Axle 02
+    100006: Axle Holder 01
+    100008: Axle Holder 02
+    100010: Brace 01
+    100012: Brace 02
+    100014: Brace 03
+    100016: Brace Line
+    100018: Bucket
+    100020: //RootNode
+    100022: Cross Diameter
+    100024: End 01
+    100026: End 02
+    100028: Fill Light
+    100030: Fill Light.Target
+    100032: Frame/Arms
+    100034: Ground
+    100036: Handle 01
+    100038: Handle 02
+    100040: Hub 01
+    100042: Hub 02
+    100044: Key Light
+    100046: Key Light.Target
+    100048: Left Handle
+    100050: Left Handle01
+    100052: Metal Circle
+    100054: Nut 01
+    100056: Nut 02
+    100058: Rim 01
+    100060: Rim 02
+    100062: Spokes 01
+    100064: Spokes 02
+    100066: Tire
+    100068: Wash Light
+    100070: Wheel Barrow Camera
+    100072: Wheel Barrow Camera.Target
+    400000: Arms/Leg Line
+    400002: Axle 01
+    400004: Axle 02
+    400006: Axle Holder 01
+    400008: Axle Holder 02
+    400010: Brace 01
+    400012: Brace 02
+    400014: Brace 03
+    400016: Brace Line
+    400018: Bucket
+    400020: //RootNode
+    400022: Cross Diameter
+    400024: End 01
+    400026: End 02
+    400028: Fill Light
+    400030: Fill Light.Target
+    400032: Frame/Arms
+    400034: Ground
+    400036: Handle 01
+    400038: Handle 02
+    400040: Hub 01
+    400042: Hub 02
+    400044: Key Light
+    400046: Key Light.Target
+    400048: Left Handle
+    400050: Left Handle01
+    400052: Metal Circle
+    400054: Nut 01
+    400056: Nut 02
+    400058: Rim 01
+    400060: Rim 02
+    400062: Spokes 01
+    400064: Spokes 02
+    400066: Tire
+    400068: Wash Light
+    400070: Wheel Barrow Camera
+    400072: Wheel Barrow Camera.Target
+    2000000: Wheel Barrow Camera
+    2100000: White Steel
+    2100002: Metal_
+    2100004: Red Bucket Color
+    2100006: Rubber Handles
+    2100008: Rubber
+    2100010: Ground
+    2300000: Axle 01
+    2300002: Axle 02
+    2300004: Axle Holder 01
+    2300006: Axle Holder 02
+    2300008: Brace 01
+    2300010: Brace 02
+    2300012: Brace 03
+    2300014: Bucket
+    2300016: End 01
+    2300018: End 02
+    2300020: Frame/Arms
+    2300022: Ground
+    2300024: Hub 01
+    2300026: Hub 02
+    2300028: Left Handle
+    2300030: Left Handle01
+    2300032: Nut 01
+    2300034: Nut 02
+    2300036: Spokes 01
+    2300038: Spokes 02
+    2300040: Tire
+    3300000: Axle 01
+    3300002: Axle 02
+    3300004: Axle Holder 01
+    3300006: Axle Holder 02
+    3300008: Brace 01
+    3300010: Brace 02
+    3300012: Brace 03
+    3300014: Bucket
+    3300016: End 01
+    3300018: End 02
+    3300020: Frame/Arms
+    3300022: Ground
+    3300024: Hub 01
+    3300026: Hub 02
+    3300028: Left Handle
+    3300030: Left Handle01
+    3300032: Nut 01
+    3300034: Nut 02
+    3300036: Spokes 01
+    3300038: Spokes 02
+    3300040: Tire
+    4300000: Frame/Arms
+    4300002: Axle Holder 01
+    4300004: Hub 01
+    4300006: Axle 01
+    4300008: Nut 01
+    4300010: Spokes 01
+    4300012: Axle Holder 02
+    4300014: Hub 02
+    4300016: Axle 02
+    4300018: Nut 02
+    4300020: Spokes 02
+    4300022: Brace 01
+    4300024: Bucket
+    4300026: Brace 02
+    4300028: Brace 03
+    4300030: Left Handle
+    4300032: End 01
+    4300034: Left Handle01
+    4300036: End 02
+    4300038: Tire
+    4300040: Ground
+    9500000: //RootNode
+    10800000: Fill Light
+    10800002: Key Light
+    10800004: Wash Light
+    6000828045688606266: Wheel Barrow Camera
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

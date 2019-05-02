@@ -5,6 +5,9 @@ using UnityEngine;
 public class PasswordB : MonoBehaviour
 {
     public GameObject box;
+    public GameObject empty;
+
+
     private int num_1 = 0;
     private int num_2 = 0;
     public int num_3 = 0;
@@ -28,18 +31,24 @@ public class PasswordB : MonoBehaviour
     private bool digit_4 = false;
     private bool digit_5 = false;
 
+    public AudioClip op;
+    public AudioSource source;
     public int a = 0;
     // Start is called before the first frame update
     void Start()
     {
-
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (digit_0 && digit_1 && digit_2 && digit_3 && digit_4 && digit_5) 
-        { OpenB(); }
+        {
+            source.PlayOneShot(op, 0.5f);
+            OpenB();
+            Instantiate(box, new Vector3(empty.transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+        }
     }
 
 

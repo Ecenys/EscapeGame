@@ -6,6 +6,7 @@ public class lock3 : MonoBehaviour
 {
     public GameObject box;
     public GameObject colision;
+    public GameObject quitar;
     public AudioSource source;
     public AudioClip op;
     public int a = 0;
@@ -21,7 +22,7 @@ public class lock3 : MonoBehaviour
         {
             source.PlayOneShot(op, 0.5f);
             box.GetComponent<BoxCollider>().enabled = true;
-            
+            quitar.GetComponent<BoxCollider>().enabled = false;
             a = 2;
         }
 
