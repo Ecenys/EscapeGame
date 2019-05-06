@@ -49,6 +49,6 @@ public class TMScript : MonoBehaviour
 				GetComponent<TextMesh>().text="Open";
 		}
 		else
-				GetComponent<TextMesh>().text=" ";
+				GetComponent<TextMesh>().text="";
     }
 }
