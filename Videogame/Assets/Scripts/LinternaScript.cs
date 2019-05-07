@@ -5,20 +5,19 @@ using UnityEngine;
 public class LinternaScript : MonoBehaviour
 {
     public GameObject linterna;
+	public Transform derecha;
 
-    // Start is called before the first frame update
     void Start()
     {
         linterna.SetActive(false);
     }
-
-    private void OnTriggerEnter(Collider other)
+	
+	void Update()
     {
-        if (other.gameObject == linterna)
-        {
-            linterna.SetActive(false);
-            Destroy(this);
-        }
-    }
+		if(Vector3.Distance(derecha.position, transform.position) < 0.5){
+			linterna.SetActive(true);
+			Destroy(this);
+		}
+	}
 
 }
