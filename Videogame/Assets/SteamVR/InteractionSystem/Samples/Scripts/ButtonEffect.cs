@@ -11,19 +11,27 @@ namespace Valve.VR.InteractionSystem.Sample
     {
 		public String number;
 		public GameObject marco;
+		public GameObject activate;
+		
+		void Start()
+		{
+			
+		}
 		
         public void OnButtonDown(Hand fromHand)
         {
-			String text = marco.GetComponent<TextMesh>().text;
-			text += number;
-			marco.GetComponent<TextMesh>().text = text;
-            ColorSelf(Color.cyan);
+			if(activate.transform.position.y < -1.0f){
+				String text = marco.GetComponent<TextMesh>().text;
+				text += number;
+				marco.GetComponent<TextMesh>().text = text;
+			}
+            //ColorSelf(Color.cyan);
             //fromHand.TriggerHapticPulse(1000);
 		}
 
         public void OnButtonUp(Hand fromHand)
         {
-            ColorSelf(Color.white);
+            //ColorSelf(Color.white);
         }
 		
 

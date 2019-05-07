@@ -37,17 +37,16 @@ public class TVScript : MonoBehaviour
     {
 		float dist = Vector3.Distance(transform.position, player.transform.position);
 		float volumencontinuo;
-		volumencontinuo = dist / maxDistanceAudio;
-        volumencontinuo *= volume;
-        volumencontinuo = 1 - volumencontinuo;
-        if (dist > maxDistanceAudio)
-            volumencontinuo = 0;
+		if  (dist <= maxDistanceAudio)
+			volumencontinuo = 1 - (dist / maxDistanceAudio);
+		else
+			volumencontinuo = 0;
+		volumencontinuo *= volume;
 
         if (activator.transform.position.y < -1.0f){
 			switch (channel)
 			{
 			  case 1:
-                    Debug.Log("Estoyaqui");
 					channel1.GetComponent<Renderer>().enabled = true;
 					channel2.GetComponent<Renderer>().enabled = false;
 					channel3.GetComponent<Renderer>().enabled = false;
@@ -76,3 +75,5 @@ public class TVScript : MonoBehaviour
         }
     }
 }
+
+

@@ -25,7 +25,8 @@ public class TMScript : MonoBehaviour
     void Update()
     {
         if (player.position.z <= 14)
-            transform.position = new Vector3(200, 200, 200);
+			Debug.Log("Detras");
+            //transform.position = new Vector3(200, 200, 200);
         else
             transform.position = position;
 		if (activate.transform.position.y < -1.0f){
