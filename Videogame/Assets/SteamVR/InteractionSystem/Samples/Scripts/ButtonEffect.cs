@@ -20,11 +20,11 @@ namespace Valve.VR.InteractionSystem.Sample
 		
         public void OnButtonDown(Hand fromHand)
         {
-			if(activate.transform.position.y < -1.0f){
+			//if(activate.transform.position.y < -1.0f){
 				String text = marco.GetComponent<TextMesh>().text;
 				text += number;
 				marco.GetComponent<TextMesh>().text = text;
-			}
+			//}
             //ColorSelf(Color.cyan);
             //fromHand.TriggerHapticPulse(1000);
 		}
