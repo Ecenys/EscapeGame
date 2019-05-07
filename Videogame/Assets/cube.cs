@@ -36,7 +36,7 @@ public class cube : MonoBehaviour
             puertasalida.GetComponent<BoxCollider>().enabled = true;
             rojo.SetActive(false);
             verde.SetActive(true);
-            colPuerta.SetActive(false);
+            colPuerta.GetComponent<BoxCollider>().enabled = false;
             if (var == 1)
             {
                 source.PlayOneShot(alarmarara, 0.5f);
