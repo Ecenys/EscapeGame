@@ -24,11 +24,11 @@ public class TMScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.position.z <= 14)
-			Debug.Log("Detras");
-            //transform.position = new Vector3(200, 200, 200);
-        else
-            transform.position = position;
+   //     if (player.position.z <= 14)
+			//Debug.Log("Detras");
+   //         //transform.position = new Vector3(200, 200, 200);
+   //     else
+   //         transform.position = position;
 		if (activate.transform.position.y < -1.0f){
 			if (puzzle){
 				if (GetComponent<TextMesh>().text.Length == 4 && GetComponent<TextMesh>().text != "" && GetComponent<TextMesh>().text != "1826"){

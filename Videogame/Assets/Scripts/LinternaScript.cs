@@ -16,8 +16,9 @@ public class LinternaScript : MonoBehaviour
     {
 		if(Vector3.Distance(derecha.position, transform.position) < 0.5){
 			linterna.SetActive(true);
-			Destroy(this);
-		}
+            Destroy(this.gameObject);
+            //transform.position = new Vector3(-100, -100, -100);
+        }
 	}
 
 }
