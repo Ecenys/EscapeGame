@@ -8,7 +8,6 @@ public class TMScript : MonoBehaviour
 	public GameObject activate;
 	public GameObject door;
     public Transform player;
-    
 	
 	private bool puzzle;
     private Vector3 position;

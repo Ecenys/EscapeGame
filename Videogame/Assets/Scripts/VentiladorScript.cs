@@ -7,6 +7,7 @@ public class VentiladorScript : MonoBehaviour
 	public GameObject activador;
 	public bool enable;
 	public int velocidad;
+    public GameObject linterna;
 	
 	private bool sound;
 	
@@ -26,6 +27,7 @@ public class VentiladorScript : MonoBehaviour
 			if (!sound){ //evita que se reinicie cada frame
 				GetComponent<AudioSource>().Play();
 				sound = true;
+                Destroy(linterna);
 			}
 			//transform.rotation = Quaternion.Slerp(transform.rotation, new Quaternion(0, 1, 0, 1),  Time.deltaTime);
 		}
