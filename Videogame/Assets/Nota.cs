@@ -11,6 +11,8 @@ namespace Valve.VR.InteractionSystem.Sample
     {
         public AudioSource source;
         public AudioClip nota;
+        public GameObject cubo;
+
         void Start()
         {
             source = GetComponent<AudioSource>();
@@ -18,7 +20,19 @@ namespace Valve.VR.InteractionSystem.Sample
 
         public void OnButtonDown(Hand fromHand)
         {
-            source.PlayOneShot(nota, 0.5f);
+            if (this.name == "Cube")
+            {
+                if (source.isPlaying) { }
+                else
+                {
+                    source.Play();
+                }
+            }
+            else
+            {
+                source.Play();
+                cubo.GetComponent<Pianito>().input.Add(Int32.Parse(this.name)); 
+            }
         }
 
         public void OnButtonUp(Hand fromHand)

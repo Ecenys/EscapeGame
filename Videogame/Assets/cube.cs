@@ -40,7 +40,6 @@ public class cube : MonoBehaviour
             if (var == 1)
             {
                 source.PlayOneShot(alarmarara, 0.5f);
-                source.PlayOneShot(acierto, 0.5f);
                 var = 0;
             }
             //Destroy(puerta);
