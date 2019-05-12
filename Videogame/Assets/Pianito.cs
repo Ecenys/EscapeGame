@@ -14,6 +14,7 @@ public class Pianito : MonoBehaviour
     public bool sonido = true;
     public AudioClip clip;
     public int elementos;
+    public GameObject colPuerta;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +36,7 @@ public class Pianito : MonoBehaviour
                 rojo.SetActive(false);
                 verde.SetActive(true);
                 puerta.GetComponent<BoxCollider>().enabled = true;
+                colPuerta.SetActive(false);
                 if(sonido == true)
                 {
                     source.Play();
