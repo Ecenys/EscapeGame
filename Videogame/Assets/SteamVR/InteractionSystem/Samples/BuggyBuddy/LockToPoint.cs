@@ -54,7 +54,7 @@ namespace Valve.VR.InteractionSystem.Sample
             if (interactable != null)
                 used = interactable.attachedToHand;
 			
-			Debug.Log(used);
+			//Debug.Log(used);
             if (used)
             {
                 body.isKinematic = true;
