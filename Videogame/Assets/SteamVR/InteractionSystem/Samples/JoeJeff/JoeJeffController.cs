@@ -13,7 +13,7 @@ namespace Valve.VR.InteractionSystem.Sample
         public SteamVR_Action_Vector2 moveAction = SteamVR_Input.GetAction<SteamVR_Action_Vector2>("platformer", "Move");
         public SteamVR_Action_Boolean jumpAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("platformer", "Jump");
 
-        public JoeJeff character;
+        public GameObject gira;
 
         public Renderer jumpHighlight;
 
@@ -50,11 +50,13 @@ namespace Valve.VR.InteractionSystem.Sample
 
             float rot = transform.eulerAngles.y;
 
-            movement = Quaternion.AngleAxis(rot, Vector3.up) * movement;
+            //movement = Quaternion.AngleAxis(rot, Vector3.up) * movement;
 
-            jumpHighlight.sharedMaterial.SetColor("_EmissionColor", Color.white * glow);
+            gira.transform.rotation = Quaternion.AngleAxis(rot, Vector3.up);
 
-            character.Move(movement * 2, jump);
+            //jumpHighlight.sharedMaterial.SetColor("_EmissionColor", Color.white * glow);
+
+            //character.Move(movement * 2, jump);
         }
     }
 }
