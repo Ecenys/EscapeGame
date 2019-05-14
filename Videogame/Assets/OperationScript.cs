@@ -14,7 +14,6 @@ public class OperationScript : MonoBehaviour
     public AudioClip error;
     public AudioClip acierto;
     public GameObject colPuerta;
-    private int var = 1;
     public GameObject tp1;
     public GameObject tp2;
     public GameObject tp3;
@@ -30,11 +29,6 @@ public class OperationScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    void OnCollisionEnter(Collision col)
-    {
         if (seis.GetComponent<cube>().solved == true && cuatro.GetComponent<cube2>().solved == true)
         {
             puertasalida.GetComponent<BoxCollider>().enabled = true;
@@ -44,18 +38,15 @@ public class OperationScript : MonoBehaviour
             tp1.SetActive(true);
             tp2.SetActive(true);
             tp3.SetActive(true);
-            if (var == 1)
-            {
-                source.PlayOneShot(alarmarara, 0.5f);
-                var = 0;
-            }
+            source.PlayOneShot(alarmarara, 0.5f);
             //Destroy(puerta);
             //puerta.GetComponent("Interactable").enabled = true;
         }
-        else
-        {
-            source.PlayOneShot(error, 0.5f);
-        }
+    }
+
+    void OnCollisionEnter(Collision col)
+    {
+
     }
 
 
