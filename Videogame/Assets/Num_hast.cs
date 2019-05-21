@@ -5,7 +5,7 @@ using UnityEngine;
 public class Num_hast : MonoBehaviour
 {
     // Start is called before the first frame update
-    public passwordA passA;
+    public PasswordB passA;
     public AudioSource source;
     public AudioClip op;
 

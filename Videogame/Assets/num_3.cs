@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class num_3 : MonoBehaviour
 {
-    public passwordA passA;
+    public PasswordB passA;
     public AudioSource source;
     public AudioClip op;
 
