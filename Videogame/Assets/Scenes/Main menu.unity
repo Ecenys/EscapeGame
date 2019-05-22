@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17276813, g: 0.21589187, b: 0.29782563, a: 1}
+  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589246, b: 0.2978263, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7654,6 +7654,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a30c620bcca8ed448dd43ba86c3f699, type: 3}
+--- !u!1 &519587170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 17321171}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &526683689
 GameObject:
   m_ObjectHideFlags: 0
@@ -14145,7 +14151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284896700}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.367, y: -0.01, z: 0}
+  m_LocalPosition: {x: -0.367, y: -21.84, z: 0}
   m_LocalScale: {x: 0.13173681, y: 1, z: 0.94974}
   m_Children:
   - {fileID: 1468068574}
@@ -14166,6 +14172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller1: {fileID: 1828912983}
   controller2: {fileID: 2030472495}
+  player: {fileID: 519587170}
 --- !u!65 &1284896703
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14174,11 +14181,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284896700}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 48.972237, y: 1, z: 11.975897}
+  m_Center: {x: -23.986115, y: 0, z: -0.62182647}
 --- !u!23 &1284896704
 MeshRenderer:
   m_ObjectHideFlags: 0
