@@ -13,5 +13,7 @@ public class StartScript : MonoBehaviour
         if (Vector3.Distance(controller1.transform.position, transform.position) < 1 || Vector3.Distance(controller2.transform.position, transform.position) < 1 )
 			//acciones extra (movimiento npc)
 			Application.LoadLevel("Amazing videogame");
+		if (Input.GetKeyDown( KeyCode.Space ))
+			Application.LoadLevel("Amazing videogame");
     }
 }
