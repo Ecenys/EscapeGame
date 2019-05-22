@@ -23,6 +23,7 @@ public class StartScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Destroy(player);
         Application.LoadLevel("Amazing videogame");
     }
 }
