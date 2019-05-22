@@ -394,6 +394,7 @@ GameObject:
   - component: {fileID: 48460074}
   - component: {fileID: 48460073}
   - component: {fileID: 48460072}
+  - component: {fileID: 48460075}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -474,6 +475,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48460070}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &48460075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48460070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab1a056edc031ef41887e35fa0a61251, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller1: {fileID: 1828912983}
+  controller2: {fileID: 2030472495}
 --- !u!1 &103576474
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,7 +896,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226735969}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: -127.2, z: 0}
+  m_LocalPosition: {x: -0.04, y: -0.01, z: 0}
   m_LocalScale: {x: 0.8, y: 1, z: 0.8}
   m_Children:
   - {fileID: 1833140763}
@@ -1038,8 +1053,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257108623}
   m_LocalRotation: {x: -0, y: -0.1310134, z: -0, w: 0.99138063}
-  m_LocalPosition: {x: -0.44, y: 1.338, z: 0.687}
-  m_LocalScale: {x: 0.6000714, y: -0.0173125, z: 0.4319571}
+  m_LocalPosition: {x: -0.3, y: 1.338, z: 0.718}
+  m_LocalScale: {x: 1.0345831, y: -0.0173125, z: 0.6974379}
   m_Children:
   - {fileID: 1266699902}
   - {fileID: 952697082}
@@ -4989,12 +5004,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a30c620bcca8ed448dd43ba86c3f699, type: 3}
---- !u!1 &519587170 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9,
-    type: 3}
-  m_PrefabInstance: {fileID: 17321171}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &557367984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5197,6 +5206,7 @@ GameObject:
   - component: {fileID: 627634611}
   - component: {fileID: 627634610}
   - component: {fileID: 627634609}
+  - component: {fileID: 627634612}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -5277,6 +5287,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627634607}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &627634612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627634607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c3677eb0c65024abf598ff9e471c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller1: {fileID: 1828912983}
+  controller2: {fileID: 2030472495}
 --- !u!1 &628299972
 GameObject:
   m_ObjectHideFlags: 0
@@ -5680,7 +5704,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704824089}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.05, y: -91.9, z: 0}
+  m_LocalPosition: {x: 0.05, y: -0.01000306, z: 0}
   m_LocalScale: {x: 0.13174029, y: 1, z: 0.9497471}
   m_Children:
   - {fileID: 713028891}
@@ -5698,8 +5722,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 15.628314, y: 0.9999997, z: 6.9936647}
-  m_Center: {x: -7.3141713, y: 0, z: 0.01214535}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &704824092
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5759,7 +5783,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller1: {fileID: 1828912983}
   controller2: {fileID: 2030472495}
-  player: {fileID: 519587170}
 --- !u!1 &713028890
 GameObject:
   m_ObjectHideFlags: 0
@@ -7321,7 +7344,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284896700}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.367, y: -1.1, z: -13.15}
+  m_LocalPosition: {x: -0.367, y: -1.1, z: 0}
   m_LocalScale: {x: 0.13173681, y: 1, z: 0.94974}
   m_Children:
   - {fileID: 1468068574}
@@ -7342,7 +7365,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller1: {fileID: 1828912983}
   controller2: {fileID: 2030472495}
-  player: {fileID: 519587170}
 --- !u!65 &1284896703
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7351,8 +7373,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284896700}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
+  m_IsTrigger: 0
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 48.972237, y: 1, z: 11.975897}
   m_Center: {x: -23.986115, y: 0, z: -0.62182647}
@@ -10101,6 +10123,7 @@ GameObject:
   - component: {fileID: 1802668349}
   - component: {fileID: 1802668348}
   - component: {fileID: 1802668347}
+  - component: {fileID: 1802668350}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -10181,6 +10204,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802668345}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1802668350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802668345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3901b46bf409dad4da38076093782ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller1: {fileID: 1828912983}
+  controller2: {fileID: 2030472495}
 --- !u!1 &1804545111
 GameObject:
   m_ObjectHideFlags: 0
@@ -11598,7 +11635,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: '        Are you sure?
+  m_text: '              Exit?
 
 '
   m_isRightToLeft: 0
@@ -11669,10 +11706,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1890159963}
-    characterCount: 22
+    characterCount: 20
     spriteCount: 0
-    spaceCount: 11
-    wordCount: 4
+    spaceCount: 15
+    wordCount: 2
     linkCount: 0
     lineCount: 1
     pageCount: 1
