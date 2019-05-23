@@ -14,8 +14,8 @@ public class Room2 : MonoBehaviour
             //acciones extra (movimiento npc)
             Application.LoadLevel("Room2");
         //acciones extra (movimiento npc)
-        /*if (Input.GetKeyDown( KeyCode.Space ))
-			Application.LoadLevel("Amazing videogame");*/
+        if (Input.GetKeyDown( KeyCode.E ))
+			Application.LoadLevel("Room2");
     }
 
 }

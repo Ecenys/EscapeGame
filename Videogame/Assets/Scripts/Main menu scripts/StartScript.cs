@@ -14,8 +14,8 @@ public class StartScript : MonoBehaviour
 			//acciones extra (movimiento npc)
 			Application.LoadLevel("Amazing videogame");
             //acciones extra (movimiento npc)
-        /*if (Input.GetKeyDown( KeyCode.Space ))
-			Application.LoadLevel("Amazing videogame");*/
+        if (Input.GetKeyDown( KeyCode.D ))
+			Application.LoadLevel("Amazing videogame");
     }
 
 }
