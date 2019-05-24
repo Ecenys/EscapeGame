@@ -9,7 +9,7 @@ public class FinalAudio : MonoBehaviour
     public GameObject coll;
     private AudioSource cosa;
     private bool counter;
-    private readonly float timer = 40.0f;
+    private readonly float timer = 50.0f;
 
     // Start is called before the first frame update
     void Start()
