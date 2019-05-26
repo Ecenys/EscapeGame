@@ -9,6 +9,7 @@ public class InitTP : MonoBehaviour
     public GameObject tpmusica;
     public GameObject tpotro;
     public GameObject tpJa;
+    public GameObject tpPoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class InitTP : MonoBehaviour
         tpmusica.SetActive(true);
         tpotro.SetActive(true);
         tpJa.SetActive(true);
+        tpPoint.SetActive(true);
     }
 
     // Update is called once per frame
