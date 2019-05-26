@@ -19,6 +19,7 @@ public class OperationScript : MonoBehaviour
     public GameObject tp3;
     public GameObject seis;
     public GameObject cuatro;
+    public bool var = false; 
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +39,11 @@ public class OperationScript : MonoBehaviour
             tp1.SetActive(true);
             tp2.SetActive(true);
             tp3.SetActive(true);
-            source.PlayOneShot(alarmarara, 0.5f);
+            if (!var)
+            {
+                source.PlayOneShot(alarmarara, 0.5f);
+                var = true;
+            }
             //Destroy(puerta);
             //puerta.GetComponent("Interactable").enabled = true;
         }

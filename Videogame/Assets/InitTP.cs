@@ -13,7 +13,7 @@ public class InitTP : MonoBehaviour
     {
         tpor.SetActive(true);
         tpentrada.SetActive(true);
-        tpmusica.SetActive(true);
+        //tpmusica.SetActive(true);
         tpotro.SetActive(true);
     }
 

@@ -34,6 +34,10 @@ public class PasswordC : MonoBehaviour
     public AudioClip op;
     public AudioSource source;
     public int a = 0;
+
+    public GameObject tp1;
+    public GameObject tp2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,9 +49,12 @@ public class PasswordC : MonoBehaviour
     {
         if (digit_0 && digit_1 && digit_2 && digit_3 && digit_4 && digit_5)
         {
+            digit_0 = false;
             source.PlayOneShot(op, 0.5f);
             OpenC();
-            digit_0 = false;
+            tp1.SetActive(true);
+            tp2.SetActive(true);
+
         }
     }
 

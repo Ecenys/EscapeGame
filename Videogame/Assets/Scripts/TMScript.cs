@@ -10,6 +10,7 @@ public class TMScript : MonoBehaviour
     public Transform player;
     public GameObject pared;
     public GameObject tp1;
+    public GameObject tp2;
 	
 	private bool puzzle;
     private Vector3 position;
@@ -46,6 +47,7 @@ public class TMScript : MonoBehaviour
 					puzzle = false;
 					door.GetComponent<BoxCollider>().enabled = true;
                     tp1.SetActive(true);
+                    tp2.SetActive(true);
                     Destroy(pared);
 				}
 			}

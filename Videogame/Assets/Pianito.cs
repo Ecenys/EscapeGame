@@ -16,11 +16,16 @@ public class Pianito : MonoBehaviour
     public int elementos;
     public GameObject colPuerta;
     public GameObject tp1;
+    public GameObject tpja1;
+    public GameObject tpja2;
+    public GameObject tpja3;
+    public GameObject tpja4;
 
     // Start is called before the first frame update
     void Start()
     {
         source = GetComponent<AudioSource>();
+        sonido = true;
     }
 
     // Update is called once per frame
@@ -40,7 +45,14 @@ public class Pianito : MonoBehaviour
                 puerta.GetComponent<BoxCollider>().enabled = true;
                 colPuerta.SetActive(false);
                 tp1.SetActive(true);
-                if(sonido == true)
+                tpja1.SetActive(true);
+                tpja2.SetActive(true);
+                tpja3.SetActive(true);
+                tpja4.SetActive(true);
+                //source.Play();
+
+                //source.PlayOneShot(clip, 2f);
+                if (sonido == true)
                 {
                     source.Play();
                     source.PlayOneShot(clip, 2f);
