@@ -11,6 +11,13 @@ public class GodScript : MonoBehaviour
     public AudioClip audio2;
     public AudioClip audio3;
     public AudioClip audio4;
+	public AudioClip audio5;
+    public AudioClip audio6;
+    public AudioClip audio7;
+    public AudioClip audio8;
+	
+	public AudioClip ea1;
+	public AudioClip ea2;
 	
 	//SteamVR actions
     public SteamVR_Action_Boolean grabPinch;
@@ -27,7 +34,7 @@ public class GodScript : MonoBehaviour
     {
         //audio = GetComponent<AudioSource>();
         time = 0;
-        hint = 1;
+        hint = 0;
     }
 
     // Update is called once per frame
@@ -61,12 +68,15 @@ public class GodScript : MonoBehaviour
     //Cambiar pista
     private void changeHint(){
         switch(hint){
+			case 0:
+				break;
             case 1:
                 GetComponent<AudioSource>().clip = audio1;
                 Debug.Log("1");
                 break;
             case 2:
                 GetComponent<AudioSource>().clip = audio2;
+				hint++;
                 Debug.Log("2");
                 break;
             case 3:
@@ -76,6 +86,22 @@ public class GodScript : MonoBehaviour
             case 4:
                 GetComponent<AudioSource>().clip = audio4;
                 Debug.Log("4");
+                break;
+			case 5:
+                GetComponent<AudioSource>().clip = audio5;
+                Debug.Log("5");
+                break;
+            case 6:
+                GetComponent<AudioSource>().clip = audio6;
+                Debug.Log("6");
+                break;
+            case 7:
+                GetComponent<AudioSource>().clip = audio7;
+                Debug.Log("7");
+                break;
+            case 8:
+                GetComponent<AudioSource>().clip = audio8;
+                Debug.Log("8");
                 break;
         }
     }
@@ -87,7 +113,16 @@ public class GodScript : MonoBehaviour
     }
 
     public void specialAudio(int i) {
-            
+            switch(hint){
+            case 1:
+                GetComponent<AudioSource>().clip = ea1;
+                Debug.Log("1");
+                break;
+            case 2:
+                GetComponent<AudioSource>().clip = ea2;
+                Debug.Log("2");
+                break;
+        }
     }
 
     //************************** Quitar mando **************************//

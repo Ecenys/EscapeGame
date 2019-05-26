@@ -21,6 +21,9 @@ public class TVScript : MonoBehaviour
 	public int channel = 1;
 	public float volume = 0.4f;
 	
+	public GodScript script;
+	private bool hecho = false;
+	
     // Start is called before the first frame update
     void Start()
     {
@@ -66,6 +69,10 @@ public class TVScript : MonoBehaviour
 					channel3.GetComponent<Renderer>().enabled = true;
 					videoplayer1.SetDirectAudioMute(0,true);
 					videoplayer2.SetDirectAudioMute(0,true);
+					if(!hecho){
+						script.nextHint();
+						hecho = true;
+					}
 				  break;
 			}
 

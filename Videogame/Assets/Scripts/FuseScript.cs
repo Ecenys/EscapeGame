@@ -16,6 +16,9 @@ public class FuseScript : MonoBehaviour
 
     public GameObject lintern;
 	
+	public GodScript script;
+	private bool hecho = false;
+	
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,11 @@ public class FuseScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		if (fuse2.transform.position == position1.transform.position || fuse2.transform.position == position3.transform.position || fuse2.transform.position == position2.transform.position)
+			if(!hecho){
+				script.nextHint();
+				hecho = true;
+			}
         if (fuse1.transform.position == position1.transform.position && fuse2.transform.position == position3.transform.position && fuse3.transform.position == position2.transform.position)
         {
             activate.transform.position = new Vector3(0.0f, -2.0f, 0.0f);

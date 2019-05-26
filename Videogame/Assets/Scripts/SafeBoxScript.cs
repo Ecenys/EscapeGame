@@ -15,6 +15,7 @@ public class SafeBoxScript : MonoBehaviour
 	public GameObject key;
 	public GameObject point;
 	
+	public GodScript script;
 	private bool hecho;
 	
     // Start is called before the first frame update
@@ -42,6 +43,7 @@ public class SafeBoxScript : MonoBehaviour
 				key.SetActive(true);
 				key.transform.position = point.transform.position;
 				hecho = true;
+				script.nextHint();
 			}
 
 		}
