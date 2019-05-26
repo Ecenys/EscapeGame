@@ -12,12 +12,20 @@ public class SafeBoxScript : MonoBehaviour
 	public GameObject key5;
 	public GameObject key6;
 	
+	public GameObject key;
+	public GameObject point;
+	
+	private bool hecho;
+	
     // Start is called before the first frame update
     void Start()
     {
         GetComponent<Interactable>().enabled = false;
 		GetComponent<Throwable>().enabled = false;
 		GetComponent<BoxCollider>().enabled = false;
+		
+		key.SetActive(false);
+		hecho = false;
     }
 
     // Update is called once per frame
@@ -29,6 +37,12 @@ public class SafeBoxScript : MonoBehaviour
 			GetComponent<Throwable>().enabled = true;
 			GetComponent<BoxCollider>().enabled = true;
             Debug.Log("Esta bien");
+			
+			if(!hecho){
+				key.SetActive(true);
+				key.transform.position = point.transform.position;
+				hecho = true;
+			}
 
 		}
     }

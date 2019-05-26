@@ -7,13 +7,14 @@ public class lock1 : MonoBehaviour
 {
     public GameObject box;
     public GameObject colision;
+	public GameObject fuse;
     
     
     public int a=0;
     // Start is called before the first frame update
     void Start()
     {
-        
+        fuse.SetActive(false);
     }
 
     void OnCollisionEnter(Collision col)
@@ -24,6 +25,7 @@ public class lock1 : MonoBehaviour
             box.GetComponent<BoxCollider>().enabled = true;
 			GetComponent<Rigidbody>().useGravity =  true;
             a = 2;
+			fuse.SetActive(true);
         }
 
     }
