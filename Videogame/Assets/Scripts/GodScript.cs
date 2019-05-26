@@ -15,9 +15,10 @@ public class GodScript : MonoBehaviour
     public AudioClip audio6;
     public AudioClip audio7;
     public AudioClip audio8;
+	public AudioClip audio9;
+	public AudioClip audio10;
 	
 	public AudioClip ea1;
-	public AudioClip ea2;
 	
 	//SteamVR actions
     public SteamVR_Action_Boolean grabPinch;
@@ -103,6 +104,14 @@ public class GodScript : MonoBehaviour
                 GetComponent<AudioSource>().clip = audio8;
                 Debug.Log("8");
                 break;
+			case 9:
+                GetComponent<AudioSource>().clip = audio9;
+                Debug.Log("8");
+                break;
+			case 10:
+                GetComponent<AudioSource>().clip = audio10;
+                Debug.Log("8");
+                break;
         }
     }
     
@@ -117,10 +126,11 @@ public class GodScript : MonoBehaviour
             case 1:
                 GetComponent<AudioSource>().clip = ea1;
                 Debug.Log("1");
+				hint = 1;
                 break;
             case 2:
-                GetComponent<AudioSource>().clip = ea2;
-                Debug.Log("2");
+				if(hint == 8 || hint == 9)
+					hint = 9;
                 break;
         }
     }

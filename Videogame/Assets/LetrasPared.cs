@@ -11,6 +11,8 @@ public class LetrasPared : MonoBehaviour
     public GameObject cuadro;
     public AudioSource source;
     public bool sonido = true;
+	
+	public GodScript script;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,9 @@ public class LetrasPared : MonoBehaviour
             {
                 source.Play();
                 sonido = false;
+				
+				script.nextHint();
+				
             }
         }  
     }

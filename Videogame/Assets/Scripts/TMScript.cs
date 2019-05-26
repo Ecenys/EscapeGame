@@ -12,6 +12,9 @@ public class TMScript : MonoBehaviour
     public GameObject tp1;
     public GameObject tp2;
 	
+	public GodScript script;
+	private bool hecho = false;
+	
 	private bool puzzle;
     private Vector3 position;
     // Start is called before the first frame update
@@ -49,6 +52,10 @@ public class TMScript : MonoBehaviour
                     tp1.SetActive(true);
                     tp2.SetActive(true);
                     Destroy(pared);
+					if(!hecho){
+						script.nextHint();
+						hecho = true;
+					}
 				}
 			}
 			else
