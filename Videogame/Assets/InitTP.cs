@@ -10,6 +10,7 @@ public class InitTP : MonoBehaviour
     public GameObject tpotro;
     public GameObject tpJa;
     public GameObject tpPoint;
+    public GameObject teleporting;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class InitTP : MonoBehaviour
         tpotro.SetActive(true);
         tpJa.SetActive(true);
         tpPoint.SetActive(true);
+        teleporting.SetActive(true);
     }
 
     // Update is called once per frame
