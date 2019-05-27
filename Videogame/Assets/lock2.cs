@@ -7,7 +7,7 @@ public class lock2 : MonoBehaviour
 
     public GameObject box;
     public GameObject colision;
-
+    public GameObject quit;
 
     public int a = 0;
     // Start is called before the first frame update
@@ -22,7 +22,7 @@ public class lock2 : MonoBehaviour
         if (col.gameObject.tag == "keyTramp")
         {
             box.GetComponent<BoxCollider>().enabled = true;
-            
+            Destroy(quit);
             a = 2;
         }
 
