@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
 using Valve.VR;
+using System;
 
 public class GodScript : MonoBehaviour
 {
@@ -70,6 +71,7 @@ public class GodScript : MonoBehaviour
     private void changeHint(){
         switch(hint){
 			case 0:
+				specialAudio(1);
 				break;
             case 1:
                 GetComponent<AudioSource>().clip = audio1;
@@ -117,7 +119,10 @@ public class GodScript : MonoBehaviour
     
     public void nextHint() {
         hint++;
-        GetComponent<AudioSource>().Stop();
+		try
+		{
+			GetComponent<AudioSource>().Stop();
+		}catch(Exception e){}
         changeHint();
     }
 
